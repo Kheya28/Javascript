@@ -1,0 +1,29 @@
+<html> 
+<head> 
+</head> 
+<body> 
+<script type="text/javascript"> 
+
+	class Cylinder 
+	{
+      constructor(r,h){
+         this.r = r;
+         this.h = h;
+      }
+
+      volumePrint(){
+        let value = Math.PI* Math.pow(this.r,2)*this.h;
+        let fixedValue = value.toFixed(4)
+        return fixedValue
+      }
+   }
+
+   let obj = new Cylinder(4,5);
+   let finalValue= obj.volumePrint()
+   
+
+   document.write(finalValue)
+
+</script> 
+</body> 
+</html>

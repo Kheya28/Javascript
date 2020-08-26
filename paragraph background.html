@@ -1,0 +1,25 @@
+
+<html>
+<head>
+<title>Change the Background Color with JavaScript</title>
+<script>
+    
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    }
+</script>
+</head>
+
+<body>
+    <h1 >This is a heading</h1>
+    <p id="heading">This is a paragraph of text.</p>
+ 
+    <br>
+    
+        <label>Change Heading Background To:</label>
+    <button type="button" onclick="changeHeadingBg('red');">Red</button>
+    <button type="button" onclick="changeHeadingBg('green');">Green</button>
+    <button type="button" onclick="changeHeadingBg('blue');">Blue</button>
+    
+</body>
+</html>
