@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		function is_validiate(hello){
+			var hi;
+			var regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})$/;
+			if (regex.test(hello)) 
+			{
+				hi = 'valid';
+			}
+			else{
+				hi ='invalid';
+			}
+			return hi 
+		}
+
+		var hello= "farhanshihab321@gmail.com";
+		document.write(is_validiate(hello))
+
+	</script>
+
+</body>
+</html>

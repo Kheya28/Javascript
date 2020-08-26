@@ -1,0 +1,26 @@
+<html>
+<body>
+	<script>
+  function is_alphaDash(str)
+{
+ regexp = /^[a-z0-9_\-]+$/i;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+
+</script>
+
+</body>
+
+<script>
+	 document.write(is_alphaDash('12-133')+"<br>" );
+	 document.write(is_alphaDash('10A0_23')+"<br>" );
+</script>
+</html>

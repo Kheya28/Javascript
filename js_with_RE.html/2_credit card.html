@@ -1,0 +1,26 @@
+<html>
+<body>
+	<script>
+    function is_creditCard(str)
+	{
+		 regexp = /^([0-9]{16})$/;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+
+</script>
+
+</body>
+
+<script>
+	 document.write(is_creditCard("3782822463100906")+"<br>" );
+	 document.write(is_creditCard("37828224630006")+"<br>" );
+</script>
+</html>
