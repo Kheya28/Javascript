@@ -1,0 +1,24 @@
+<html> 
+<head>
+<script type="text/javascript">
+function randomImg1() {
+    var myImages1 = new Array();
+    myImages1[1] = "image/img1.PNG";
+    myImages1[2] = "image/img2.PNG";
+    myImages1[3] = "image/img3.PNG";
+    var rnd = Math.floor(Math.random() * myImages1.length);
+    if (rnd == 0) {
+            rnd = 1;
+    }
+    document.write('<img class="who" src="' + myImages1[rnd] + '"/>');
+}
+</script>
+
+
+</head> 
+<body> 
+
+<button style="float: left;" type="button" onclick="randomImg1();">click</button>
+
+</body> 
+</html>
